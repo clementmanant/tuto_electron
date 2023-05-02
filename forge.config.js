@@ -27,4 +27,17 @@ module.exports = {
       config: {},
     },
   ],
+  publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'clementmanant',
+          name: 'tuto_electron',
+        },
+        prerelease: false,
+        draft: true,
+      },
+    },
+  ],
 };
